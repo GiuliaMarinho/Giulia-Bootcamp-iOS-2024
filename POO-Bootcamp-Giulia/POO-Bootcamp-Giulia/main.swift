@@ -244,3 +244,35 @@ class Aluno {
 var alunaGiulia: Aluno = Aluno(nome: "Giulia", notas: [7,6,5,4])
 print("Media das notas de \(alunaGiulia.nome): \(alunaGiulia.calcularMedia())")
 
+// MARK: - Herança
+
+// Classe PAI
+class Animal {
+
+  var nome: String
+  var cor: String
+  var peso: Double
+
+  init(nome: String, cor: String, peso: Double) {
+    self.nome = nome
+    self.cor = cor
+    self.peso = peso
+  }
+}
+
+// Classe Filha(classe na qual HERDA as propriedades e metodos do pai)
+// A classe filha ela contem TUDO OQUE O PAI (NO NOSSO EXEMPLO É A CLASSE ANIMAL) CONTEM, E + OQUE ELA JÁ CONTEM!
+class Gato: Animal {
+
+  var contemRabo: Bool = true
+  var bebeLeite: Bool
+
+  // toda a vez que você utilizar a palavra super, significa que você está chamando algo da classe PAI(no nosso exemplo, o init da classe Animal)
+  init(bebeLeite: Bool, nome: String, cor: String, peso: Double) {
+    self.bebeLeite = bebeLeite
+    super.init(nome: nome, cor: cor, peso: peso)
+  }
+
+}
+
+var bartolomeu: Gato = Gato(bebeLeite: true, nome: "Bartolomeu", cor: "Marrom", peso: 5)
