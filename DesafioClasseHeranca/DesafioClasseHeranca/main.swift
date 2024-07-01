@@ -22,6 +22,28 @@ import Foundation
 // - adicionarEstoque(qtd: Int): Adiciona a quantidade especificada ao estoque existente.
 // - removerEstoque(qtd: Int) -> Bool: Tenta remover a quantidade especificada do estoque; retorna true se for bem-sucedido, false se não houver estoque suficiente.
 
+class Produto1 {
+    
+    var nome: String
+    var quantidade: Int
+    
+    init(nome: String, quantidade: Int) {
+        self.nome = nome
+        self.quantidade = quantidade
+    }
+    
+    func adicionarEstoque(quantidade2: Int) {
+      quantidade += quantidade2
+    }
+
+    func removerEstoque(quantidade1: Int) -> Bool {
+      if quantidade >= quantidade1 {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 
 
 // Exercício 2: Sistema de Agendamento de Consultas
