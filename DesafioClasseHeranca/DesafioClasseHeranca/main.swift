@@ -33,11 +33,11 @@ class Produto1 {
     }
     
     func adicionarEstoque(quantidade2: Int) {
-      quantidade += quantidade2
+      quantidade = quantidade + quantidade2
     }
 
-    func removerEstoque(quantidade1: Int) -> Bool {
-      if quantidade >= quantidade1 {
+    func removerEstoque(quantidade2: Int) -> Bool {
+      if quantidade >= quantidade2 {
         return true
       } else {
         return false
@@ -58,6 +58,9 @@ class Produto1 {
 // Métodos:
 // - reagendar(dataNova: String): Altera a data da consulta para uma nova data fornecida.
 
+class consulta {
+    
+}
 
 
 
