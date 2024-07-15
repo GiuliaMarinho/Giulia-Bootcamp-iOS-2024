@@ -52,6 +52,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <backgroundConfiguration key="background" cornerRadius="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapepdLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JY-qD-Wk3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,7 +80,10 @@
                     <connections>
                         <outlet property="confirmthePassword" destination="ibf-dd-k3M" id="8QL-d4-2GF"/>
                         <outlet property="emailTextField" destination="o5L-jg-rmC" id="4jY-1B-5A5"/>
+                        <outlet property="eyeConfirmPasswordView" destination="3JN-ij-8Hm" id="Fv8-41-Vfc"/>
+                        <outlet property="eyePasswordImageView" destination="wEn-d2-jrb" id="7Y4-3X-qAI"/>
                         <outlet property="label" destination="ll4-94-pcg" id="1fG-Ba-HoQ"/>
+                        <outlet property="loginButton" destination="c8g-wf-VyJ" id="MCr-28-Vrn"/>
                         <outlet property="passwordTextField" destination="ceA-U8-YYp" id="hI9-IN-Qbb"/>
                     </connections>
                 </viewController>

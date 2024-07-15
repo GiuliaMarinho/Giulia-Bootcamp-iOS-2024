@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmthePassword: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var eyePasswordImageView: UIImageView!
+    @IBOutlet weak var eyeConfirmPasswordView: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,7 @@ class ViewController: UIViewController {
     }
     
     func configElements() {
+        view.backgroundColor = .orange
         
         emailTextField.placeholder = "Digite seu email:"
         emailTextField.keyboardType = .emailAddress
@@ -69,5 +75,9 @@ extension ViewController: UITextFieldDelegate {
         let passwordPattern = ".{6,}"
         let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordPattern)
         return passwordPred.evaluate(with: password)
+    }
+    
+    @IBAction func tapepdLoginButton(_ sender: UIButton) {
+        print(#function)
     }
 }
