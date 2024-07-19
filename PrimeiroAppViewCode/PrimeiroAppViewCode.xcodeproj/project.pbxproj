@@ -13,6 +13,8 @@
 		169112882C48A82E0078C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169112872C48A82E0078C105 /* Assets.xcassets */; };
 		1691128B2C48A82E0078C105 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1691128A2C48A82E0078C105 /* Base */; };
 		16E885F32C49CDAF0065EC7E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E885F22C49CDAF0065EC7E /* LoginScreen.swift */; };
+		16E885F62C49F5F50065EC7E /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E885F52C49F5F50065EC7E /* RegisterScreen.swift */; };
+		16E885F82C49F6060065EC7E /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E885F72C49F6060065EC7E /* RegisterScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1691128A2C48A82E0078C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1691128C2C48A82E0078C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E885F22C49CDAF0065EC7E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		16E885F52C49F5F50065EC7E /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		16E885F72C49F6060065EC7E /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1691127D2C48A82D0078C105 /* PrimeiroAppViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				16E885F42C49F5DB0065EC7E /* Register */,
 				16E885F02C49CD280065EC7E /* Login */,
 				1691127E2C48A82D0078C105 /* AppDelegate.swift */,
 				169112802C48A82D0078C105 /* SceneDelegate.swift */,
@@ -81,6 +86,15 @@
 				16E885F22C49CDAF0065EC7E /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		16E885F42C49F5DB0065EC7E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				16E885F52C49F5F50065EC7E /* RegisterScreen.swift */,
+				16E885F72C49F6060065EC7E /* RegisterScreenViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E885F62C49F5F50065EC7E /* RegisterScreen.swift in Sources */,
 				169112832C48A82D0078C105 /* LoginViewController.swift in Sources */,
 				16E885F32C49CDAF0065EC7E /* LoginScreen.swift in Sources */,
+				16E885F82C49F6060065EC7E /* RegisterScreenViewController.swift in Sources */,
 				1691127F2C48A82D0078C105 /* AppDelegate.swift in Sources */,
 				169112812C48A82D0078C105 /* SceneDelegate.swift in Sources */,
 			);
