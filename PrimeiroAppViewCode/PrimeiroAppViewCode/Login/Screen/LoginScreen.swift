@@ -122,9 +122,9 @@ class LoginScreen: UIView {
             passwordTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             passwordTextField.heightAnchor.constraint(equalToConstant: 40),
 
-            registerButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
-            registerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
-            registerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
+            registerButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 30),
+            registerButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            registerButton.heightAnchor.constraint(equalToConstant: 40),
             
             loginButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
             loginButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),

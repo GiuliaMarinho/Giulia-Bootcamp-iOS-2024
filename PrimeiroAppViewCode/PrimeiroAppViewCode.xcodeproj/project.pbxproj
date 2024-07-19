@@ -91,10 +91,18 @@
 		16E885F42C49F5DB0065EC7E /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				16E885F52C49F5F50065EC7E /* RegisterScreen.swift */,
+				16E885F92C49F8F80065EC7E /* Screen */,
 				16E885F72C49F6060065EC7E /* RegisterScreenViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		16E885F92C49F8F80065EC7E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				16E885F52C49F5F50065EC7E /* RegisterScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
