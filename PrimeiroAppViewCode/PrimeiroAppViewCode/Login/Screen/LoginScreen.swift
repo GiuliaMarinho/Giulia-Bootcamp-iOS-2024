@@ -129,7 +129,7 @@ class LoginScreen: UIView {
             loginButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
             loginButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             loginButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
-            loginButton.heightAnchor.constraint(equalToConstant: 40),
+            loginButton.heightAnchor.constraint(equalToConstant: 60),
 
         ])
     }
