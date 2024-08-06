@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		16C8506D2C6189B50097F14F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8506C2C6189B50097F14F /* AppDelegate.swift */; };
 		16C8506F2C6189B50097F14F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8506E2C6189B50097F14F /* SceneDelegate.swift */; };
-		16C850712C6189B50097F14F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C850702C6189B50097F14F /* ViewController.swift */; };
+		16C850712C6189B50097F14F /* Tela01VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C850702C6189B50097F14F /* Tela01VC.swift */; };
 		16C850762C6189B80097F14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C850752C6189B80097F14F /* Assets.xcassets */; };
 		16C850792C6189B80097F14F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 16C850782C6189B80097F14F /* Base */; };
+		16C850822C6195A70097F14F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C850812C6195A70097F14F /* MainTabBarController.swift */; };
+		16C850872C61965A0097F14F /* Tela02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C850862C61965A0097F14F /* Tela02VC.swift */; };
+		16C850892C6196A20097F14F /* Tela03VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C850882C6196A20097F14F /* Tela03VC.swift */; };
+		16C8508C2C619AC40097F14F /* Tela01Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8508B2C619AC40097F14F /* Tela01Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16C850692C6189B50097F14F /* TabBarENotificationCenterViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarENotificationCenterViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8506C2C6189B50097F14F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C8506E2C6189B50097F14F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16C850702C6189B50097F14F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16C850702C6189B50097F14F /* Tela01VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01VC.swift; sourceTree = "<group>"; };
 		16C850752C6189B80097F14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C850782C6189B80097F14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16C8507A2C6189B80097F14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C850812C6195A70097F14F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		16C850862C61965A0097F14F /* Tela02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02VC.swift; sourceTree = "<group>"; };
+		16C850882C6196A20097F14F /* Tela03VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03VC.swift; sourceTree = "<group>"; };
+		16C8508B2C619AC40097F14F /* Tela01Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		16C8506B2C6189B50097F14F /* TabBarENotificationCenterViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				16C850802C61957D0097F14F /* MainTabBarController */,
+				16C850852C61962F0097F14F /* Tela03 */,
+				16C850842C61961F0097F14F /* Tela02 */,
+				16C850832C6196150097F14F /* Tela01 */,
 				16C8506C2C6189B50097F14F /* AppDelegate.swift */,
 				16C8506E2C6189B50097F14F /* SceneDelegate.swift */,
-				16C850702C6189B50097F14F /* ViewController.swift */,
 				16C850752C6189B80097F14F /* Assets.xcassets */,
 				16C850772C6189B80097F14F /* LaunchScreen.storyboard */,
 				16C8507A2C6189B80097F14F /* Info.plist */,
 			);
 			path = TabBarENotificationCenterViewCode;
+			sourceTree = "<group>";
+		};
+		16C850802C61957D0097F14F /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				16C850812C6195A70097F14F /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		16C850832C6196150097F14F /* Tela01 */ = {
+			isa = PBXGroup;
+			children = (
+				16C8508A2C619AB70097F14F /* Screen */,
+				16C850702C6189B50097F14F /* Tela01VC.swift */,
+			);
+			path = Tela01;
+			sourceTree = "<group>";
+		};
+		16C850842C61961F0097F14F /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				16C850862C61965A0097F14F /* Tela02VC.swift */,
+			);
+			path = Tela02;
+			sourceTree = "<group>";
+		};
+		16C850852C61962F0097F14F /* Tela03 */ = {
+			isa = PBXGroup;
+			children = (
+				16C850882C6196A20097F14F /* Tela03VC.swift */,
+			);
+			path = Tela03;
+			sourceTree = "<group>";
+		};
+		16C8508A2C619AB70097F14F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				16C8508B2C619AC40097F14F /* Tela01Screen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C850712C6189B50097F14F /* ViewController.swift in Sources */,
+				16C850872C61965A0097F14F /* Tela02VC.swift in Sources */,
+				16C850892C6196A20097F14F /* Tela03VC.swift in Sources */,
+				16C8508C2C619AC40097F14F /* Tela01Screen.swift in Sources */,
+				16C850712C6189B50097F14F /* Tela01VC.swift in Sources */,
+				16C850822C6195A70097F14F /* MainTabBarController.swift in Sources */,
 				16C8506D2C6189B50097F14F /* AppDelegate.swift in Sources */,
 				16C8506F2C6189B50097F14F /* SceneDelegate.swift in Sources */,
 			);
