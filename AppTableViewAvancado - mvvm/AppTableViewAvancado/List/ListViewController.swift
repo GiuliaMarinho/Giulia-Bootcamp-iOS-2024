@@ -11,7 +11,7 @@ class ListViewController: UIViewController {
     
     var screen: ListScreen?
     var viewModel: ListViewModel = ListViewModel()
-    
+
     
     override func loadView() {
         screen = ListScreen()

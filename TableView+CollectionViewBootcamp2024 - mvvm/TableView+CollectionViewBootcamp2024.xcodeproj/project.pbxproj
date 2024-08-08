@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165922C92C657D82005EFCDF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165922C82C657D82005EFCDF /* ListViewModel.swift */; };
+		165922CB2C65828F005EFCDF /* DetailTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165922CA2C65828F005EFCDF /* DetailTableViewCellViewModel.swift */; };
 		34F70DCD2C5C5F3100513175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F70DCC2C5C5F3100513175 /* AppDelegate.swift */; };
 		34F70DCF2C5C5F3100513175 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F70DCE2C5C5F3100513175 /* SceneDelegate.swift */; };
 		34F70DD12C5C5F3100513175 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F70DD02C5C5F3100513175 /* ListViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165922C82C657D82005EFCDF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		165922CA2C65828F005EFCDF /* DetailTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		34F70DC92C5C5F3100513175 /* TableView+CollectionViewBootcamp2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView+CollectionViewBootcamp2024.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F70DCC2C5C5F3100513175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F70DCE2C5C5F3100513175 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				34F70DE42C5C60B300513175 /* TableViewCell */,
 				34F70DE12C5C5F8100513175 /* Screen */,
 				34F70DD02C5C5F3100513175 /* ListViewController.swift */,
+				165922C82C657D82005EFCDF /* ListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				34F70DE52C5C60D200513175 /* DetailTableViewCell.swift */,
+				165922CA2C65828F005EFCDF /* DetailTableViewCellViewModel.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -187,11 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F70DD12C5C5F3100513175 /* ListViewController.swift in Sources */,
+				165922CB2C65828F005EFCDF /* DetailTableViewCellViewModel.swift in Sources */,
 				34F70DEC2C5C65E100513175 /* Detail.swift in Sources */,
 				34F70DCD2C5C5F3100513175 /* AppDelegate.swift in Sources */,
 				34F70DE92C5C643A00513175 /* ContentCollectionViewCell.swift in Sources */,
 				34F70DCF2C5C5F3100513175 /* SceneDelegate.swift in Sources */,
 				34F70DE62C5C60D200513175 /* DetailTableViewCell.swift in Sources */,
+				165922C92C657D82005EFCDF /* ListViewModel.swift in Sources */,
 				34F70DE32C5C5F8C00513175 /* ListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

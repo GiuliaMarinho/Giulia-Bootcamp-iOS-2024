@@ -8,9 +8,11 @@
 import UIKit
 
 class DetailTableViewCell: UITableViewCell {
+    
+    var viewModel: DetailTableViewCellViewModel = DetailTableViewCellViewModel()
+
 
   static let identifier: String = String(describing: DetailTableViewCell.self)
-  var list: [Item] = []
 
   lazy var titleLabel: UILabel = {
     let label = UILabel()
@@ -63,26 +65,27 @@ class DetailTableViewCell: UITableViewCell {
     ])
   }
 
-  func setupCell(detail: Detail) {
-    titleLabel.text = detail.title
-    list = detail.list
-  }
-
+    func setupCell(detail: Detail) {
+        titleLabel.text = detail.title
+        viewModel.setList(detail: detail)
+    }
 }
 
 extension DetailTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return list.count
+      return viewModel.numberOfRowsInSection
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContentCollectionViewCell.identifier, for: indexPath) as? ContentCollectionViewCell
-    cell?.setupCell(item: list[indexPath.row])
+      cell?.setupCell(item: viewModel.loadCurrentItem(indexPath: indexPath))
     return cell ?? UICollectionViewCell()
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return ContentCollectionViewCell.calculateSize(title: list[indexPath.row].text)
+      return ContentCollectionViewCell.calculateSize(title: viewModel.getTitle(indexpath: indexPath))
   }
+    
+    
 }
