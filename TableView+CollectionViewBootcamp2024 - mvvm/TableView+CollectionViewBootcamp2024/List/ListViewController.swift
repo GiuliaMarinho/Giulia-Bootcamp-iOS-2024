@@ -97,7 +97,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.identifier, for: indexPath) as? DetailTableViewCell
-        cell?.setupCell(detail: viewModel.loadCurrentlist(indexPath: [indexPath.row]))
+        cell?.setupCell(detail: viewModel.loadCurrentlist(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
 }

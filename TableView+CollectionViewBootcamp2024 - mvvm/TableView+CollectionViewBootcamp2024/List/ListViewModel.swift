@@ -24,7 +24,7 @@ class ListViewModel {
     }
     
  func loadCurrentlist(indexPath: IndexPath) -> Detail {
-    return (listDetail[indexPath.row])
+    return (listDetail indexPath)
 }
 }
 
