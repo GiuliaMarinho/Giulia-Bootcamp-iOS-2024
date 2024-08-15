@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1693967F2C6EB644003EB7BF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1693967E2C6EB644003EB7BF /* LoginViewModel.swift */; };
+		169396832C6EBE26003EB7BF /* CadastroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169396822C6EBE26003EB7BF /* CadastroScreen.swift */; };
+		169396852C6EBE3B003EB7BF /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169396842C6EBE3B003EB7BF /* CadastroViewController.swift */; };
+		169396872C6EBE4F003EB7BF /* CadastroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169396862C6EBE4F003EB7BF /* CadastroViewModel.swift */; };
 		2C9DE750F6A27F57F0237C1B /* Pods_ImplementandoFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F382C3506407B3F1B98A0965 /* Pods_ImplementandoFirebase.framework */; };
 		344667642C6AE84500A2930A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344667632C6AE84500A2930A /* AppDelegate.swift */; };
 		344667662C6AE84500A2930A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344667652C6AE84500A2930A /* SceneDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1693967E2C6EB644003EB7BF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		169396822C6EBE26003EB7BF /* CadastroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroScreen.swift; sourceTree = "<group>"; };
+		169396842C6EBE3B003EB7BF /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		169396862C6EBE4F003EB7BF /* CadastroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewModel.swift; sourceTree = "<group>"; };
 		2C2136FF84D1ACF374453D5C /* Pods-ImplementandoFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplementandoFirebase.release.xcconfig"; path = "Target Support Files/Pods-ImplementandoFirebase/Pods-ImplementandoFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		344667602C6AE84500A2930A /* ImplementandoFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplementandoFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344667632C6AE84500A2930A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		169396802C6EBDD1003EB7BF /* Cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				169396812C6EBE0C003EB7BF /* Screen */,
+				169396842C6EBE3B003EB7BF /* CadastroViewController.swift */,
+				169396862C6EBE4F003EB7BF /* CadastroViewModel.swift */,
+			);
+			path = Cadastro;
+			sourceTree = "<group>";
+		};
+		169396812C6EBE0C003EB7BF /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				169396822C6EBE26003EB7BF /* CadastroScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		344667572C6AE84500A2930A = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +100,7 @@
 		344667622C6AE84500A2930A /* ImplementandoFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				169396802C6EBDD1003EB7BF /* Cadastro */,
 				344667772C6AE88E00A2930A /* Login */,
 				344667632C6AE84500A2930A /* AppDelegate.swift */,
 				344667652C6AE84500A2930A /* SceneDelegate.swift */,
@@ -90,6 +117,7 @@
 			children = (
 				344667782C6AE89E00A2930A /* Screen */,
 				344667672C6AE84500A2930A /* LoginViewController.swift */,
+				1693967E2C6EB644003EB7BF /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -228,7 +256,11 @@
 				344667682C6AE84500A2930A /* LoginViewController.swift in Sources */,
 				3446677A2C6AE8A800A2930A /* LoginScreen.swift in Sources */,
 				344667642C6AE84500A2930A /* AppDelegate.swift in Sources */,
+				1693967F2C6EB644003EB7BF /* LoginViewModel.swift in Sources */,
+				169396832C6EBE26003EB7BF /* CadastroScreen.swift in Sources */,
+				169396852C6EBE3B003EB7BF /* CadastroViewController.swift in Sources */,
 				344667662C6AE84500A2930A /* SceneDelegate.swift in Sources */,
+				169396872C6EBE4F003EB7BF /* CadastroViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

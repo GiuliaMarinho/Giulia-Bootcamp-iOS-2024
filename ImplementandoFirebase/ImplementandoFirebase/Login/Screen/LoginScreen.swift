@@ -2,7 +2,6 @@
 //  LoginScreen.swift
 //  ImplementandoFirebase
 //
-//  Created by Caio Fabrini on 12/08/24.
 //
 
 import Foundation
