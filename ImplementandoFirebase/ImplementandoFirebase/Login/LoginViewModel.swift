@@ -2,7 +2,7 @@
 //  LoginViewModel.swift
 //  ImplementandoFirebase
 //
-//  Created by Giulia Marinho on 15/08/24.
+//  Created by Caio Fabrini on 15/08/24.
 //
 
 import Foundation
@@ -11,6 +11,7 @@ import FirebaseAuth
 protocol LoginViewModelProtocol: AnyObject {
   func successLogin()
   func errorLogin(title: String, message: String)
+  func loading(start: Bool)
 }
 
 class LoginViewModel {
@@ -18,8 +19,11 @@ class LoginViewModel {
   weak var delegate: LoginViewModelProtocol?
 
   func fetchLogin(email: String, password: String) {
+    // start loading
+    delegate?.loading(start: true)
     Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
       guard let self else { return }
+    delegate?.loading(start: false)
 
       // Opção 1
       guard error == nil else {
